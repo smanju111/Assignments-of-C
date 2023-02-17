@@ -1,0 +1,28 @@
+//Write a c program to print x to the power of y value. 
+#include <stdio.h>
+
+main()
+
+{
+
+int x,y,n=1;
+
+printf("enter the base no = \t");
+
+scanf("%d",&x);
+
+printf("enter the exponent no = \t");
+
+scanf("%d",&y);
+
+for(int i=1;i<=y;i++)
+
+{
+
+n=n*x;
+
+}
+
+printf("result of x^y = %d^%d = %d",x,y,n);
+
+}
