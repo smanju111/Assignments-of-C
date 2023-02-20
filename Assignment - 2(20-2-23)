@@ -1,0 +1,25 @@
+//Write a c program find 2nd highest among n numbers
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+     int i, n, a, b, num;
+   a = b = 0;
+   printf("Enter the Maximum amount of Numbers :: ");
+   scanf("%d", &n);
+   printf("\n\n");
+   for(i=0; i<n; i++)
+   {
+     printf("\nEnter the Number :: ");
+     scanf("%d", &num);
+     if (num > a)
+     {
+       b = a;
+       a = num;
+     }
+     else if (num > b)
+       b = num;
+   }
+   printf("\n\n Second Highest Number is :: %d",b);
+   getch();
+}
