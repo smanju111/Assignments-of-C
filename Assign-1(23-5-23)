@@ -1,0 +1,25 @@
+//assignment-1.
+//wap to read an age of 20 persons and find out how many of them fall
+//under 1. baby age  2.school age   3. aduld age.
+#include<stdio.h>
+int main(){
+	int i=1, age, baby=0, scl=0, adult=0;
+	
+	do{
+		scanf("%d", &age);
+		i++;
+		if(age<=4)
+			baby+=1;
+		else if(age<=16)
+			scl+=1;
+		else if(age<=30)
+			adult+=1;
+		else
+		printf("Enter valid age\n");
+		
+	}while(i<=20);
+	printf("\nNumber of persons under baby age=%d", baby);
+	printf("\nNumber of persons under school age=%d", scl);
+	printf("\nNumber of persons under adult age=%d", adult);
+}
+		
